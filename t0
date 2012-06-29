@@ -1,0 +1,6 @@
+#!/bin/bash -eu
+
+nwarn=$(make -Bs res |& grep warning: | wc -l)
+[ $nwarn -eq 0 ] && exit 0
+echo not ok: $nwarn warnings
+exit 1
