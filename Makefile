@@ -7,3 +7,4 @@ fmt:
 	indent -linux *.c
 
 .PHONY: clean default
+.SILENT:
